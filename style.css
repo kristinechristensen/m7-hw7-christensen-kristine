@@ -176,13 +176,6 @@ span.tooltip:focus {
   text-decoration: underline;
 }
 
-/* Tool tip text */
-
-span.tooltip span {
-  color:white;
-  padding:25px;
-}
-
 /* show tooltip on hover/focus */
 span.tooltip:hover > span,
 span.tooltip:focus > span {
@@ -193,7 +186,9 @@ span.tooltip:focus > span {
 
 /* styling for tooltip bubble */
 span.tooltip span {
-  visibility:hidden;
+  visibility: hidden;  /* Use for transition */
+  color:white;
+  padding:25px;
   width:205px;
   border-radius: 1rem;
   background-color: #042d2f;
